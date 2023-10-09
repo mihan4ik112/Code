@@ -1,0 +1,668 @@
+[2023-10-07 18:14:39.207517 +05:00] INFO [updater_client]: Starting updater main thread. Application root: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord"
+[2023-10-07 18:14:39.818001 +05:00] INFO [updater_client]: Updater received command 0: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 18:14:39.818302 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 18:14:39.818425 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:39.820407 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:39.831723 +05:00] INFO [updater_client::db]: Set install_id Some("ea2ef9dd-3c1b-4a91-a89e-5713c5ca6406")
+[2023-10-07 18:14:39.831807 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 18:14:40.388601 +05:00] INFO [updater_client::install]: needs_host, None manifest HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), package_sha256: "75e680f18e087368f4ba0b09066a8aa669b84edccb277dcf8a655fc104c1770f", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/full.distro" }
+[2023-10-07 18:14:40.389192 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:14:40.389214 +05:00] INFO [updater_client::install]: Host to be installed: HostTaskIdentifier { version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, from_version: Some(HostVersionTriple(1, 0, 9018)), package_sha256: "558a10c7273d70767d41ee4df1262f70a6e573738ef4d7febfc65a3247a90939", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/from/1.0.9018" }
+[2023-10-07 18:14:40.389238 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_desktop_core" }, version: 1 }, from_version: None, package_sha256: "7bbcf9521928f0e5da5911dd024adf7e924fe8427b12f8cf2d0bd7039199ad14", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/full.distro" }
+[2023-10-07 18:14:40.389259 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_spellcheck" }, version: 1 }, from_version: None, package_sha256: "56f8a87db6d02143df0268fa3dc67e54a2dfb58c507ede8dc496a13ecb283081", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/full.distro" }
+[2023-10-07 18:14:40.389278 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_utils" }, version: 1 }, from_version: None, package_sha256: "0a6803ea47295819ac4d775da10731b4c6cd27bc6df83d50d3eff1f6e674ae80", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/full.distro" }
+[2023-10-07 18:14:40.389299 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_erlpack" }, version: 1 }, from_version: None, package_sha256: "c6da3096fde4cf38cedf0ade63d0bde2aa1a83867a1926c5c73deac2f4fcbec0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/full.distro" }
+[2023-10-07 18:14:40.389393 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_voice" }, version: 1 }, from_version: None, package_sha256: "f4f1d2daae49c2edd8c84e1f917c9dfac7606e7acdf6dc3158ccb0176e1d9b0a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/full.distro" }
+[2023-10-07 18:14:40.392780 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:14:42.233284 +05:00] INFO [updater_client::install]: Executing host install tasks.
+[2023-10-07 18:14:46.291004 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:14:47.289103 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:14:48.191057 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 18:14:48.191097 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 18:14:48.191468 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 18:14:48.193422 +05:00] INFO [updater_client]: Updater received command 1: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 18:14:48.193498 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 18:14:48.193532 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:48.194481 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:48.194588 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 18:14:48.437462 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 18:14:48.442005 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 18:14:48.442033 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 18:14:48.442455 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 18:14:48.443656 +05:00] INFO [updater_client]: Updater received command 2: QueryCurrentVersions
+[2023-10-07 18:14:48.443737 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:48.444288 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:48.446879 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:48.447714 +05:00] INFO [updater_client]: Updater received command 3: SetManifests(Running, Some(Manifest { host_updates: HostUpdates { full: HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), package_sha256: "75e680f18e087368f4ba0b09066a8aa669b84edccb277dcf8a655fc104c1770f", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/full.distro" }, deltas: [HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), package_sha256: "558a10c7273d70767d41ee4df1262f70a6e573738ef4d7febfc65a3247a90939", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/from/1.0.9018" }], modules: {"discord_media": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "1a8d1c27048a80c0294db922415f6f8e8c55b0041ad933d696450bc8dcc2e714", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "85f557993c5601d4054a7735b11310ca94402a11255f8b97fb8926c194147ae3", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/from/1.0.9018/1" }] }, "discord_desktop_core": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "7bbcf9521928f0e5da5911dd024adf7e924fe8427b12f8cf2d0bd7039199ad14", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "8efa4649ea3cf72e3f04faa9eee98620c82d2a3613075a988adf103902da904d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/from/1.0.9018/1" }] }, "discord_hook": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c732fcf719a6c83591b7fa1118fdc0e2c9eaaf67d5e044f9dac30cf5abd70709", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "40f8cb2fca51d2eadbbe5b88f9c48d610009eb4fba731d824d8be3d46beea504", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/from/1.0.9018/1" }] }, "discord_sekrit": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "96ac8b2d1faaea56739609cbf1b52e97a5970fc2c29434bd1f34b61ffd9e0942", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "132f0743313cb561ba8f81316f6eda3590f5d026586885ed1adb58371d555bbb", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/from/1.0.9018/1" }] }, "discord_vigilante": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "464331f3c7630fa151a6e04b3f91291454257ece6442f430da82405723216754", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "38ac365b3a2399247ca1d492759e018f2984eb58a06e93426540ec2d6a0f6e0c", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/from/1.0.9018/1" }] }, "discord_game_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "4566e9b6e8161fae5a4841bf0548b5bfaa80eb8e32be0b7b27f326b3a6a65c38", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "2c7b0dbdee3f12aa81d957d0f3a394da861e042cbf39993574f6b4f4bfa204f2", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/from/1.0.9018/1" }] }, "discord_krisp": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "87aa66268681941523bc40810ddaa44fb5fca8dcd2dec1c51ecdcaff330e5078", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "58f8a1cdd5ee1ed7bb5b860bf564c944e16944fcb530edefa33fe4533af6c030", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/from/1.0.9018/1" }] }, "discord_dispatch": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "73eeae6137efdc211ac455863799e3ef575b2f0d95bfea00a2ffeb6f360aeb0d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "45b0e19e6e185c714f0b817a8b38debc106c665b945d64bb26d0afd3878cb93b", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/from/1.0.9018/1" }] }, "discord_erlpack": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c6da3096fde4cf38cedf0ade63d0bde2aa1a83867a1926c5c73deac2f4fcbec0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "854c22e0346c6dcd63c339110b1caeb0e8bcdbf7f0ed728cd360c9521cc800ab", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/from/1.0.9018/1" }] }, "discord_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "0a6803ea47295819ac4d775da10731b4c6cd27bc6df83d50d3eff1f6e674ae80", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "f43180ac9c4650b2f82592b9ef63d2d3a943dc18887175cd1516a78be93dc43a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/from/1.0.9018/1" }] }, "discord_cloudsync": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f51abae3c38d7178af0f7afc191dc2c644480fda37b6215fdacd9b37a1d94409", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "789c2ea49c5e58e7474aefcc3b40f25ab37293671e23e8f9973c3e79a80745da", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/from/1.0.9018/1" }] }, "discord_modules": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "61df0de1c3988325e3255bb971c42c81c5239874a30806b8e748a889a53bf37e", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3d25ba8319df34866ac2683ae9ff6d33241a04b948f5057e137858920a2b3dc4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/from/1.0.9018/1" }] }, "discord_rpc": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "166628444f952916bb9cecfea3b8024b2b8b09d34c216ec2f56202eacef57fa0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "87d948df2a051e98e24442f5fdd2935a36414c508f1b19362de58492325b16ac", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/from/1.0.9018/1" }] }, "discord_voice": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f4f1d2daae49c2edd8c84e1f917c9dfac7606e7acdf6dc3158ccb0176e1d9b0a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 4, package_sha256: "fc1a0c83bb06741ccb465e9e45d4ea36de690f32daf9e97eed7a003339b34377", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/from/1.0.9018/4" }] }, "discord_overlay2": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "44d8d590225b16acce592191f27e50b53ee90a739c2d23b36af9f26914f9f983", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3aad5ba46047b59d58aeec91800ac5434766ff790a39d6028cbcb8dfa3b80f34", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/from/1.0.9018/1" }] }, "discord_spellcheck": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "56f8a87db6d02143df0268fa3dc67e54a2dfb58c507ede8dc496a13ecb283081", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "e10e6cd7467a74352e0d04bad756bd43ca67a3907183ae9865a02f368f11eac4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/from/1.0.9018/1" }] }}, required_modules: ["discord_desktop_core", "discord_erlpack", "discord_spellcheck", "discord_utils", "discord_voice"] }, metadata_version: Some(38122) }))
+[2023-10-07 18:14:48.448027 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: set_manifests).
+[2023-10-07 18:14:48.448551 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: set_manifests).
+[2023-10-07 18:14:48.448618 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "set_manifests", strong count: 1)
+[2023-10-07 18:14:48.449670 +05:00] INFO [updater_client]: Updater received command 4: CollectGarbage
+[2023-10-07 18:14:48.449747 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: collect_garbage).
+[2023-10-07 18:14:48.450224 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: collect_garbage).
+[2023-10-07 18:14:48.453429 +05:00] INFO [updater_client]: Summary of in-use assets:
+[2023-10-07 18:14:48.453470 +05:00] INFO [updater_client]: Used host: HostVersionTriple(1, 0, 9019)
+[2023-10-07 18:14:48.453485 +05:00] INFO [updater_client]:   Used module: "discord_rpc"
+[2023-10-07 18:14:48.453500 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453512 +05:00] INFO [updater_client]:   Used module: "discord_overlay2"
+[2023-10-07 18:14:48.453525 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453536 +05:00] INFO [updater_client]:   Used module: "discord_utils"
+[2023-10-07 18:14:48.453549 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453560 +05:00] INFO [updater_client]:   Used module: "discord_krisp"
+[2023-10-07 18:14:48.453572 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453584 +05:00] INFO [updater_client]:   Used module: "discord_spellcheck"
+[2023-10-07 18:14:48.453596 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453608 +05:00] INFO [updater_client]:   Used module: "discord_hook"
+[2023-10-07 18:14:48.453620 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453631 +05:00] INFO [updater_client]:   Used module: "discord_media"
+[2023-10-07 18:14:48.453643 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453655 +05:00] INFO [updater_client]:   Used module: "discord_sekrit"
+[2023-10-07 18:14:48.453667 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453679 +05:00] INFO [updater_client]:   Used module: "discord_desktop_core"
+[2023-10-07 18:14:48.453691 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453703 +05:00] INFO [updater_client]:   Used module: "discord_dispatch"
+[2023-10-07 18:14:48.453715 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453727 +05:00] INFO [updater_client]:   Used module: "discord_voice"
+[2023-10-07 18:14:48.453758 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453791 +05:00] INFO [updater_client]:   Used module: "discord_game_utils"
+[2023-10-07 18:14:48.453820 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453850 +05:00] INFO [updater_client]:   Used module: "discord_vigilante"
+[2023-10-07 18:14:48.453874 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453899 +05:00] INFO [updater_client]:   Used module: "discord_modules"
+[2023-10-07 18:14:48.453923 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453947 +05:00] INFO [updater_client]:   Used module: "discord_erlpack"
+[2023-10-07 18:14:48.453973 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.453997 +05:00] INFO [updater_client]:   Used module: "discord_cloudsync"
+[2023-10-07 18:14:48.454016 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:48.454048 +05:00] INFO [updater_client::install]: Cleaning up host at path: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord\\app-1.0.9018"
+[2023-10-07 18:14:48.456844 +05:00] ERROR [updater_client]: Couldn't cleanup obsolete host HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9018) }: Os { code: 5, kind: PermissionDenied, message: "Отказано в доступе." }
+[2023-10-07 18:14:48.486085 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "collect_garbage", strong count: 1)
+[2023-10-07 18:14:48.957676 +05:00] INFO [updater_client]: Updater main thread exiting.
+[2023-10-07 18:14:49.908219 +05:00] INFO [updater_client]: Starting updater main thread. Application root: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord"
+[2023-10-07 18:14:50.420321 +05:00] INFO [updater_client]: Updater received command 0: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 18:14:50.420544 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 18:14:50.420607 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:50.423003 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:50.423191 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 18:14:50.872282 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 18:14:50.877269 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 18:14:50.877306 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 18:14:50.877730 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 18:14:50.879336 +05:00] INFO [updater_client]: Updater received command 1: QueryCurrentVersions
+[2023-10-07 18:14:50.879395 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:50.879943 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:50.882822 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:50.883726 +05:00] INFO [updater_client]: Updater received command 2: SetManifests(Running, Some(Manifest { host_updates: HostUpdates { full: HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), package_sha256: "75e680f18e087368f4ba0b09066a8aa669b84edccb277dcf8a655fc104c1770f", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/full.distro" }, deltas: [HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), package_sha256: "558a10c7273d70767d41ee4df1262f70a6e573738ef4d7febfc65a3247a90939", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/from/1.0.9018" }], modules: {"discord_cloudsync": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f51abae3c38d7178af0f7afc191dc2c644480fda37b6215fdacd9b37a1d94409", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "789c2ea49c5e58e7474aefcc3b40f25ab37293671e23e8f9973c3e79a80745da", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/from/1.0.9018/1" }] }, "discord_voice": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f4f1d2daae49c2edd8c84e1f917c9dfac7606e7acdf6dc3158ccb0176e1d9b0a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 4, package_sha256: "fc1a0c83bb06741ccb465e9e45d4ea36de690f32daf9e97eed7a003339b34377", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/from/1.0.9018/4" }] }, "discord_desktop_core": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "7bbcf9521928f0e5da5911dd024adf7e924fe8427b12f8cf2d0bd7039199ad14", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "8efa4649ea3cf72e3f04faa9eee98620c82d2a3613075a988adf103902da904d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/from/1.0.9018/1" }] }, "discord_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "0a6803ea47295819ac4d775da10731b4c6cd27bc6df83d50d3eff1f6e674ae80", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "f43180ac9c4650b2f82592b9ef63d2d3a943dc18887175cd1516a78be93dc43a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/from/1.0.9018/1" }] }, "discord_dispatch": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "73eeae6137efdc211ac455863799e3ef575b2f0d95bfea00a2ffeb6f360aeb0d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "45b0e19e6e185c714f0b817a8b38debc106c665b945d64bb26d0afd3878cb93b", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/from/1.0.9018/1" }] }, "discord_spellcheck": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "56f8a87db6d02143df0268fa3dc67e54a2dfb58c507ede8dc496a13ecb283081", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "e10e6cd7467a74352e0d04bad756bd43ca67a3907183ae9865a02f368f11eac4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/from/1.0.9018/1" }] }, "discord_erlpack": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c6da3096fde4cf38cedf0ade63d0bde2aa1a83867a1926c5c73deac2f4fcbec0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "854c22e0346c6dcd63c339110b1caeb0e8bcdbf7f0ed728cd360c9521cc800ab", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/from/1.0.9018/1" }] }, "discord_game_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "4566e9b6e8161fae5a4841bf0548b5bfaa80eb8e32be0b7b27f326b3a6a65c38", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "2c7b0dbdee3f12aa81d957d0f3a394da861e042cbf39993574f6b4f4bfa204f2", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/from/1.0.9018/1" }] }, "discord_sekrit": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "96ac8b2d1faaea56739609cbf1b52e97a5970fc2c29434bd1f34b61ffd9e0942", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "132f0743313cb561ba8f81316f6eda3590f5d026586885ed1adb58371d555bbb", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/from/1.0.9018/1" }] }, "discord_krisp": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "87aa66268681941523bc40810ddaa44fb5fca8dcd2dec1c51ecdcaff330e5078", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "58f8a1cdd5ee1ed7bb5b860bf564c944e16944fcb530edefa33fe4533af6c030", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/from/1.0.9018/1" }] }, "discord_overlay2": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "44d8d590225b16acce592191f27e50b53ee90a739c2d23b36af9f26914f9f983", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3aad5ba46047b59d58aeec91800ac5434766ff790a39d6028cbcb8dfa3b80f34", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/from/1.0.9018/1" }] }, "discord_vigilante": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "464331f3c7630fa151a6e04b3f91291454257ece6442f430da82405723216754", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "38ac365b3a2399247ca1d492759e018f2984eb58a06e93426540ec2d6a0f6e0c", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/from/1.0.9018/1" }] }, "discord_hook": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c732fcf719a6c83591b7fa1118fdc0e2c9eaaf67d5e044f9dac30cf5abd70709", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "40f8cb2fca51d2eadbbe5b88f9c48d610009eb4fba731d824d8be3d46beea504", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/from/1.0.9018/1" }] }, "discord_rpc": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "166628444f952916bb9cecfea3b8024b2b8b09d34c216ec2f56202eacef57fa0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "87d948df2a051e98e24442f5fdd2935a36414c508f1b19362de58492325b16ac", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/from/1.0.9018/1" }] }, "discord_modules": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "61df0de1c3988325e3255bb971c42c81c5239874a30806b8e748a889a53bf37e", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3d25ba8319df34866ac2683ae9ff6d33241a04b948f5057e137858920a2b3dc4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/from/1.0.9018/1" }] }, "discord_media": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "1a8d1c27048a80c0294db922415f6f8e8c55b0041ad933d696450bc8dcc2e714", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "85f557993c5601d4054a7735b11310ca94402a11255f8b97fb8926c194147ae3", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/from/1.0.9018/1" }] }}, required_modules: ["discord_desktop_core", "discord_erlpack", "discord_spellcheck", "discord_utils", "discord_voice"] }, metadata_version: Some(38122) }))
+[2023-10-07 18:14:50.884034 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: set_manifests).
+[2023-10-07 18:14:50.884598 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: set_manifests).
+[2023-10-07 18:14:50.884664 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "set_manifests", strong count: 1)
+[2023-10-07 18:14:50.885350 +05:00] INFO [updater_client]: Updater received command 3: CollectGarbage
+[2023-10-07 18:14:50.885417 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: collect_garbage).
+[2023-10-07 18:14:50.885854 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: collect_garbage).
+[2023-10-07 18:14:50.888576 +05:00] INFO [updater_client]: Summary of in-use assets:
+[2023-10-07 18:14:50.888615 +05:00] INFO [updater_client]: Used host: HostVersionTriple(1, 0, 9019)
+[2023-10-07 18:14:50.888631 +05:00] INFO [updater_client]:   Used module: "discord_overlay2"
+[2023-10-07 18:14:50.888645 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888658 +05:00] INFO [updater_client]:   Used module: "discord_sekrit"
+[2023-10-07 18:14:50.888670 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888683 +05:00] INFO [updater_client]:   Used module: "discord_rpc"
+[2023-10-07 18:14:50.888695 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888707 +05:00] INFO [updater_client]:   Used module: "discord_utils"
+[2023-10-07 18:14:50.888720 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888732 +05:00] INFO [updater_client]:   Used module: "discord_dispatch"
+[2023-10-07 18:14:50.888745 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888757 +05:00] INFO [updater_client]:   Used module: "discord_game_utils"
+[2023-10-07 18:14:50.888770 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888782 +05:00] INFO [updater_client]:   Used module: "discord_cloudsync"
+[2023-10-07 18:14:50.888795 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888807 +05:00] INFO [updater_client]:   Used module: "discord_voice"
+[2023-10-07 18:14:50.888820 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888832 +05:00] INFO [updater_client]:   Used module: "discord_desktop_core"
+[2023-10-07 18:14:50.888845 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888937 +05:00] INFO [updater_client]:   Used module: "discord_spellcheck"
+[2023-10-07 18:14:50.888960 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888974 +05:00] INFO [updater_client]:   Used module: "discord_media"
+[2023-10-07 18:14:50.888987 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.888999 +05:00] INFO [updater_client]:   Used module: "discord_erlpack"
+[2023-10-07 18:14:50.889011 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.889023 +05:00] INFO [updater_client]:   Used module: "discord_hook"
+[2023-10-07 18:14:50.889036 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.889047 +05:00] INFO [updater_client]:   Used module: "discord_krisp"
+[2023-10-07 18:14:50.889060 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.889072 +05:00] INFO [updater_client]:   Used module: "discord_vigilante"
+[2023-10-07 18:14:50.889085 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.889096 +05:00] INFO [updater_client]:   Used module: "discord_modules"
+[2023-10-07 18:14:50.889109 +05:00] INFO [updater_client]:     - 1
+[2023-10-07 18:14:50.889152 +05:00] INFO [updater_client::install]: Cleaning up host at path: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord\\app-1.0.9018"
+[2023-10-07 18:14:50.961870 +05:00] ERROR [updater_client]: Couldn't cleanup obsolete host HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9018) }: Os { code: 32, kind: Uncategorized, message: "Процесс не может получить доступ к файлу, так как этот файл занят другим процессом." }
+[2023-10-07 18:14:50.981135 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "collect_garbage", strong count: 1)
+[2023-10-07 18:14:51.747922 +05:00] INFO [updater_client]: Updater received command 4: QueryCurrentVersions
+[2023-10-07 18:14:51.747992 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:51.748575 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:51.751431 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:51.753712 +05:00] INFO [updater_client]: Updater received command 5: QueryCurrentVersions
+[2023-10-07 18:14:51.753783 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:51.754592 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:51.757658 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:55.985680 +05:00] INFO [updater_client]: Updater received command 6: InstallModule { name: "discord_krisp", options: None }
+[2023-10-07 18:14:55.985794 +05:00] INFO [updater_client::install]: Requesting installation of module discord_krisp.
+[2023-10-07 18:14:55.985850 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-07 18:14:55.986652 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-07 18:14:55.993609 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:14:55.993666 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_krisp" }, version: 1 }, from_version: None, package_sha256: "87aa66268681941523bc40810ddaa44fb5fca8dcd2dec1c51ecdcaff330e5078", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/full.distro" }
+[2023-10-07 18:14:56.005677 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:14:56.030327 +05:00] INFO [updater_client]: Updater received command 7: InstallModule { name: "discord_game_utils", options: None }
+[2023-10-07 18:14:56.030437 +05:00] INFO [updater_client::install]: Requesting installation of module discord_game_utils.
+[2023-10-07 18:14:56.030469 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-07 18:14:56.061418 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_game_utils)" busy; waiting.
+[2023-10-07 18:14:56.348008 +05:00] INFO [updater_client]: Updater received command 8: InstallModule { name: "discord_cloudsync", options: None }
+[2023-10-07 18:14:56.348130 +05:00] INFO [updater_client::install]: Requesting installation of module discord_cloudsync.
+[2023-10-07 18:14:56.348178 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-07 18:14:56.372425 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_cloudsync)" busy; waiting.
+[2023-10-07 18:14:56.481653 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_game_utils)" busy; waiting.
+[2023-10-07 18:14:56.620014 +05:00] INFO [updater_client]: Updater received command 9: InstallModule { name: "discord_overlay2", options: None }
+[2023-10-07 18:14:56.620085 +05:00] INFO [updater_client::install]: Requesting installation of module discord_overlay2.
+[2023-10-07 18:14:56.620122 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-07 18:14:56.651405 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_overlay2)" busy; waiting.
+[2023-10-07 18:14:56.941426 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_game_utils)" busy; waiting.
+[2023-10-07 18:14:57.063470 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_overlay2)" busy; waiting.
+[2023-10-07 18:14:57.108452 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_cloudsync)" busy; waiting.
+[2023-10-07 18:14:57.583463 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_overlay2)" busy; waiting.
+[2023-10-07 18:14:57.739987 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:14:57.917446 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_cloudsync)" busy; waiting.
+[2023-10-07 18:14:58.162764 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:14:58.243583 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_krisp)", strong count: 2)
+[2023-10-07 18:14:58.244290 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_krisp)", strong count: 1)
+[2023-10-07 18:14:58.244978 +05:00] INFO [updater_client::install]: Install of module discord_krisp finished successfully.
+[2023-10-07 18:14:58.245436 +05:00] INFO [updater_client]: Updater received command 10: QueryCurrentVersions
+[2023-10-07 18:14:58.245485 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:58.245930 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:58.248453 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:58.505017 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-07 18:14:58.506069 +05:00] INFO [updater_client]: Updater received command 11: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 18:14:58.506154 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 18:14:58.506201 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:58.510166 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:14:58.510205 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_game_utils" }, version: 1 }, from_version: None, package_sha256: "4566e9b6e8161fae5a4841bf0548b5bfaa80eb8e32be0b7b27f326b3a6a65c38", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/full.distro" }
+[2023-10-07 18:14:58.517035 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:14:58.535431 +05:00] INFO [updater_client::db]: Database requested by "update_to_latest" busy; waiting.
+[2023-10-07 18:14:58.535431 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_overlay2)" busy; waiting.
+[2023-10-07 18:14:58.617593 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:14:58.639915 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:14:58.660538 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_game_utils)", strong count: 2)
+[2023-10-07 18:14:58.660944 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_game_utils)", strong count: 1)
+[2023-10-07 18:14:58.661627 +05:00] INFO [updater_client::install]: Install of module discord_game_utils finished successfully.
+[2023-10-07 18:14:58.661919 +05:00] INFO [updater_client]: Updater received command 12: QueryCurrentVersions
+[2023-10-07 18:14:58.661968 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:58.662395 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:58.665007 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:14:59.035241 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 18:14:59.035375 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 18:14:59.304329 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 18:14:59.309516 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 18:14:59.309556 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 18:14:59.309938 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 18:14:59.361294 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-07 18:14:59.368462 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:14:59.368520 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_cloudsync" }, version: 1 }, from_version: None, package_sha256: "f51abae3c38d7178af0f7afc191dc2c644480fda37b6215fdacd9b37a1d94409", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/full.distro" }
+[2023-10-07 18:14:59.377258 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:14:59.460895 +05:00] INFO [updater_client]: Updater received command 13: InstallModule { name: "discord_rpc", options: None }
+[2023-10-07 18:14:59.460994 +05:00] INFO [updater_client::install]: Requesting installation of module discord_rpc.
+[2023-10-07 18:14:59.461033 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-07 18:14:59.483429 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_rpc)" busy; waiting.
+[2023-10-07 18:14:59.513413 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_overlay2)" busy; waiting.
+[2023-10-07 18:14:59.579036 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:14:59.640193 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:14:59.698563 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_cloudsync)", strong count: 2)
+[2023-10-07 18:14:59.699128 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_cloudsync)", strong count: 1)
+[2023-10-07 18:14:59.699874 +05:00] INFO [updater_client::install]: Install of module discord_cloudsync finished successfully.
+[2023-10-07 18:14:59.700185 +05:00] INFO [updater_client]: Updater received command 14: QueryCurrentVersions
+[2023-10-07 18:14:59.700241 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:59.700869 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:14:59.704673 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:15:00.016143 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-07 18:15:00.023021 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:15:00.023071 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_rpc" }, version: 1 }, from_version: None, package_sha256: "166628444f952916bb9cecfea3b8024b2b8b09d34c216ec2f56202eacef57fa0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/full.distro" }
+[2023-10-07 18:15:00.030018 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:15:00.096572 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:15:00.130944 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:15:00.155517 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_rpc)", strong count: 2)
+[2023-10-07 18:15:00.155911 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_rpc)", strong count: 1)
+[2023-10-07 18:15:00.156596 +05:00] INFO [updater_client::install]: Install of module discord_rpc finished successfully.
+[2023-10-07 18:15:00.156886 +05:00] INFO [updater_client]: Updater received command 15: QueryCurrentVersions
+[2023-10-07 18:15:00.156937 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:00.157482 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:00.161146 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:15:01.047066 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-07 18:15:01.051599 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:15:01.051638 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_overlay2" }, version: 1 }, from_version: None, package_sha256: "44d8d590225b16acce592191f27e50b53ee90a739c2d23b36af9f26914f9f983", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/full.distro" }
+[2023-10-07 18:15:01.058564 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:15:01.139962 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:15:01.164117 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:15:01.184949 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_overlay2)", strong count: 2)
+[2023-10-07 18:15:01.185461 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_overlay2)", strong count: 1)
+[2023-10-07 18:15:01.186210 +05:00] INFO [updater_client::install]: Install of module discord_overlay2 finished successfully.
+[2023-10-07 18:15:01.186567 +05:00] INFO [updater_client]: Updater received command 16: QueryCurrentVersions
+[2023-10-07 18:15:01.186624 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:01.187232 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:01.191084 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:15:11.421454 +05:00] INFO [updater_client]: Updater received command 17: InstallModule { name: "discord_media", options: None }
+[2023-10-07 18:15:11.421537 +05:00] INFO [updater_client::install]: Requesting installation of module discord_media.
+[2023-10-07 18:15:11.421576 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-07 18:15:11.422223 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-07 18:15:11.429692 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:15:11.429744 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_media" }, version: 1 }, from_version: None, package_sha256: "1a8d1c27048a80c0294db922415f6f8e8c55b0041ad933d696450bc8dcc2e714", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/full.distro" }
+[2023-10-07 18:15:11.437937 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:15:11.580560 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:15:11.595224 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:15:11.613808 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_media)", strong count: 2)
+[2023-10-07 18:15:11.614356 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_media)", strong count: 1)
+[2023-10-07 18:15:11.615210 +05:00] INFO [updater_client::install]: Install of module discord_media finished successfully.
+[2023-10-07 18:15:11.615510 +05:00] INFO [updater_client]: Updater received command 18: QueryCurrentVersions
+[2023-10-07 18:15:11.615567 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:11.616104 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:11.619409 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:15:12.975558 +05:00] INFO [updater_client]: Updater received command 19: InstallModule { name: "discord_dispatch", options: None }
+[2023-10-07 18:15:12.975622 +05:00] INFO [updater_client::install]: Requesting installation of module discord_dispatch.
+[2023-10-07 18:15:12.975656 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-07 18:15:12.975672 +05:00] INFO [updater_client]: Updater received command 20: InstallModule { name: "discord_modules", options: None }
+[2023-10-07 18:15:12.975731 +05:00] INFO [updater_client::install]: Requesting installation of module discord_modules.
+[2023-10-07 18:15:12.975760 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-07 18:15:12.976197 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-07 18:15:12.981914 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:15:12.981963 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_modules" }, version: 1 }, from_version: None, package_sha256: "61df0de1c3988325e3255bb971c42c81c5239874a30806b8e748a889a53bf37e", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/full.distro" }
+[2023-10-07 18:15:12.990040 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:15:12.994435 +05:00] INFO [updater_client::db]: Database requested by "install_module(discord_dispatch)" busy; waiting.
+[2023-10-07 18:15:13.287225 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:15:13.391560 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:15:13.452006 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_modules)", strong count: 2)
+[2023-10-07 18:15:13.452454 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_modules)", strong count: 1)
+[2023-10-07 18:15:13.453249 +05:00] INFO [updater_client::install]: Install of module discord_modules finished successfully.
+[2023-10-07 18:15:13.453560 +05:00] INFO [updater_client]: Updater received command 21: QueryCurrentVersions
+[2023-10-07 18:15:13.453606 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:13.454022 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:13.457061 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 18:15:13.475185 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-07 18:15:13.482027 +05:00] INFO [updater_client::install]: Preparing installation tasks.
+[2023-10-07 18:15:13.482084 +05:00] INFO [updater_client::install]: Module to be installed: ModuleTaskIdentifier { version: ModuleVersionIdentifier { module: ModuleIdentifier { host_version: HostVersionIdentifier { host: HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, version: HostVersionTriple(1, 0, 9019) }, name: "discord_dispatch" }, version: 1 }, from_version: None, package_sha256: "73eeae6137efdc211ac455863799e3ef575b2f0d95bfea00a2ffeb6f360aeb0d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/full.distro" }
+[2023-10-07 18:15:13.490162 +05:00] INFO [updater_client::install]: Executing download tasks.
+[2023-10-07 18:15:13.913091 +05:00] INFO [updater_client::install]: Executing module install tasks.
+[2023-10-07 18:15:14.049546 +05:00] INFO [updater_client::install]: Finishing pending installation.
+[2023-10-07 18:15:14.105837 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_dispatch)", strong count: 2)
+[2023-10-07 18:15:14.106227 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_dispatch)", strong count: 1)
+[2023-10-07 18:15:14.106851 +05:00] INFO [updater_client::install]: Install of module discord_dispatch finished successfully.
+[2023-10-07 18:15:14.107390 +05:00] INFO [updater_client]: Updater received command 22: QueryCurrentVersions
+[2023-10-07 18:15:14.107462 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:14.107886 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-07 18:15:14.111287 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-07 19:14:58.511981 +05:00] INFO [updater_client]: Updater received command 23: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 19:14:58.512286 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 19:14:58.512327 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 19:14:58.513844 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 19:14:58.514905 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 19:14:59.020189 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 19:14:59.027092 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 19:14:59.027136 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 19:14:59.027661 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 20:14:58.612494 +05:00] INFO [updater_client]: Updater received command 24: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 20:14:58.619964 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 20:14:58.622055 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 20:14:58.636639 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 20:14:58.637721 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 20:14:59.455617 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 20:14:59.463426 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 20:14:59.463842 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 20:14:59.464551 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 21:14:58.524683 +05:00] INFO [updater_client]: Updater received command 25: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 21:14:58.525207 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 21:14:58.525290 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 21:14:58.530991 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 21:14:58.531071 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 21:14:58.956331 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 21:14:58.966490 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 21:14:58.966528 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 21:14:58.966895 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-07 22:14:58.509682 +05:00] INFO [updater_client]: Updater received command 26: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-07 22:14:58.509910 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-07 22:14:58.509944 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 22:14:58.510513 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-07 22:14:58.510597 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-07 22:14:58.960257 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-07 22:14:58.979972 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-07 22:14:58.980000 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-07 22:14:58.980334 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-08 20:15:02.493120 +05:00] INFO [updater_client]: Starting updater main thread. Application root: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord"
+[2023-10-08 20:15:04.093518 +05:00] INFO [updater_client]: Updater received command 0: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-08 20:15:04.100430 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-08 20:15:04.100479 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 20:15:04.121603 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 20:15:04.124977 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-08 20:15:04.578156 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-08 20:15:04.587164 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-08 20:15:04.587212 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-08 20:15:04.588511 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-08 20:15:04.592558 +05:00] INFO [updater_client]: Updater received command 1: QueryCurrentVersions
+[2023-10-08 20:15:04.592650 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:04.593338 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:04.597940 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:04.599839 +05:00] INFO [updater_client]: Updater received command 2: SetManifests(Running, Some(Manifest { host_updates: HostUpdates { full: HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), package_sha256: "75e680f18e087368f4ba0b09066a8aa669b84edccb277dcf8a655fc104c1770f", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/full.distro" }, deltas: [HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), package_sha256: "558a10c7273d70767d41ee4df1262f70a6e573738ef4d7febfc65a3247a90939", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/from/1.0.9018" }], modules: {"discord_cloudsync": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f51abae3c38d7178af0f7afc191dc2c644480fda37b6215fdacd9b37a1d94409", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "789c2ea49c5e58e7474aefcc3b40f25ab37293671e23e8f9973c3e79a80745da", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/from/1.0.9018/1" }] }, "discord_sekrit": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "96ac8b2d1faaea56739609cbf1b52e97a5970fc2c29434bd1f34b61ffd9e0942", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "132f0743313cb561ba8f81316f6eda3590f5d026586885ed1adb58371d555bbb", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/from/1.0.9018/1" }] }, "discord_modules": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "61df0de1c3988325e3255bb971c42c81c5239874a30806b8e748a889a53bf37e", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3d25ba8319df34866ac2683ae9ff6d33241a04b948f5057e137858920a2b3dc4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/from/1.0.9018/1" }] }, "discord_game_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "4566e9b6e8161fae5a4841bf0548b5bfaa80eb8e32be0b7b27f326b3a6a65c38", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "2c7b0dbdee3f12aa81d957d0f3a394da861e042cbf39993574f6b4f4bfa204f2", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/from/1.0.9018/1" }] }, "discord_overlay2": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "44d8d590225b16acce592191f27e50b53ee90a739c2d23b36af9f26914f9f983", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3aad5ba46047b59d58aeec91800ac5434766ff790a39d6028cbcb8dfa3b80f34", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/from/1.0.9018/1" }] }, "discord_desktop_core": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "7bbcf9521928f0e5da5911dd024adf7e924fe8427b12f8cf2d0bd7039199ad14", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "8efa4649ea3cf72e3f04faa9eee98620c82d2a3613075a988adf103902da904d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/from/1.0.9018/1" }] }, "discord_media": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "1a8d1c27048a80c0294db922415f6f8e8c55b0041ad933d696450bc8dcc2e714", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "85f557993c5601d4054a7735b11310ca94402a11255f8b97fb8926c194147ae3", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/from/1.0.9018/1" }] }, "discord_dispatch": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "73eeae6137efdc211ac455863799e3ef575b2f0d95bfea00a2ffeb6f360aeb0d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "45b0e19e6e185c714f0b817a8b38debc106c665b945d64bb26d0afd3878cb93b", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/from/1.0.9018/1" }] }, "discord_voice": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f4f1d2daae49c2edd8c84e1f917c9dfac7606e7acdf6dc3158ccb0176e1d9b0a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 4, package_sha256: "fc1a0c83bb06741ccb465e9e45d4ea36de690f32daf9e97eed7a003339b34377", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/from/1.0.9018/4" }] }, "discord_erlpack": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c6da3096fde4cf38cedf0ade63d0bde2aa1a83867a1926c5c73deac2f4fcbec0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "854c22e0346c6dcd63c339110b1caeb0e8bcdbf7f0ed728cd360c9521cc800ab", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/from/1.0.9018/1" }] }, "discord_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "0a6803ea47295819ac4d775da10731b4c6cd27bc6df83d50d3eff1f6e674ae80", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "f43180ac9c4650b2f82592b9ef63d2d3a943dc18887175cd1516a78be93dc43a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/from/1.0.9018/1" }] }, "discord_rpc": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "166628444f952916bb9cecfea3b8024b2b8b09d34c216ec2f56202eacef57fa0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "87d948df2a051e98e24442f5fdd2935a36414c508f1b19362de58492325b16ac", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/from/1.0.9018/1" }] }, "discord_hook": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c732fcf719a6c83591b7fa1118fdc0e2c9eaaf67d5e044f9dac30cf5abd70709", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "40f8cb2fca51d2eadbbe5b88f9c48d610009eb4fba731d824d8be3d46beea504", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/from/1.0.9018/1" }] }, "discord_krisp": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "87aa66268681941523bc40810ddaa44fb5fca8dcd2dec1c51ecdcaff330e5078", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "58f8a1cdd5ee1ed7bb5b860bf564c944e16944fcb530edefa33fe4533af6c030", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/from/1.0.9018/1" }] }, "discord_spellcheck": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "56f8a87db6d02143df0268fa3dc67e54a2dfb58c507ede8dc496a13ecb283081", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "e10e6cd7467a74352e0d04bad756bd43ca67a3907183ae9865a02f368f11eac4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/from/1.0.9018/1" }] }, "discord_vigilante": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "464331f3c7630fa151a6e04b3f91291454257ece6442f430da82405723216754", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "38ac365b3a2399247ca1d492759e018f2984eb58a06e93426540ec2d6a0f6e0c", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/from/1.0.9018/1" }] }}, required_modules: ["discord_desktop_core", "discord_erlpack", "discord_spellcheck", "discord_utils", "discord_voice"] }, metadata_version: Some(38122) }))
+[2023-10-08 20:15:04.600276 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: set_manifests).
+[2023-10-08 20:15:04.600969 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: set_manifests).
+[2023-10-08 20:15:04.601080 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "set_manifests", strong count: 1)
+[2023-10-08 20:15:04.602730 +05:00] INFO [updater_client]: Updater received command 3: CollectGarbage
+[2023-10-08 20:15:04.603094 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: collect_garbage).
+[2023-10-08 20:15:04.603931 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: collect_garbage).
+[2023-10-08 20:15:04.608161 +05:00] INFO [updater_client]: Summary of in-use assets:
+[2023-10-08 20:15:04.608207 +05:00] INFO [updater_client]: Used host: HostVersionTriple(1, 0, 9019)
+[2023-10-08 20:15:04.608237 +05:00] INFO [updater_client]:   Used module: "discord_hook"
+[2023-10-08 20:15:04.608263 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608298 +05:00] INFO [updater_client]:   Used module: "discord_krisp"
+[2023-10-08 20:15:04.608331 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608355 +05:00] INFO [updater_client]:   Used module: "discord_utils"
+[2023-10-08 20:15:04.608376 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608394 +05:00] INFO [updater_client]:   Used module: "discord_modules"
+[2023-10-08 20:15:04.608411 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608428 +05:00] INFO [updater_client]:   Used module: "discord_sekrit"
+[2023-10-08 20:15:04.608445 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608464 +05:00] INFO [updater_client]:   Used module: "discord_dispatch"
+[2023-10-08 20:15:04.608485 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608507 +05:00] INFO [updater_client]:   Used module: "discord_voice"
+[2023-10-08 20:15:04.608529 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608553 +05:00] INFO [updater_client]:   Used module: "discord_vigilante"
+[2023-10-08 20:15:04.608578 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608601 +05:00] INFO [updater_client]:   Used module: "discord_desktop_core"
+[2023-10-08 20:15:04.608626 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608653 +05:00] INFO [updater_client]:   Used module: "discord_overlay2"
+[2023-10-08 20:15:04.608675 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608695 +05:00] INFO [updater_client]:   Used module: "discord_game_utils"
+[2023-10-08 20:15:04.608716 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608736 +05:00] INFO [updater_client]:   Used module: "discord_erlpack"
+[2023-10-08 20:15:04.608759 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608780 +05:00] INFO [updater_client]:   Used module: "discord_cloudsync"
+[2023-10-08 20:15:04.608802 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608819 +05:00] INFO [updater_client]:   Used module: "discord_media"
+[2023-10-08 20:15:04.608838 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608856 +05:00] INFO [updater_client]:   Used module: "discord_rpc"
+[2023-10-08 20:15:04.608873 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608888 +05:00] INFO [updater_client]:   Used module: "discord_spellcheck"
+[2023-10-08 20:15:04.608905 +05:00] INFO [updater_client]:     - 1
+[2023-10-08 20:15:04.608937 +05:00] INFO [updater_client::install]: Cleaning up host at path: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord\\app-1.0.9018"
+[2023-10-08 20:15:04.653819 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "collect_garbage", strong count: 1)
+[2023-10-08 20:15:05.637207 +05:00] INFO [updater_client]: Updater received command 4: QueryCurrentVersions
+[2023-10-08 20:15:05.637273 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:05.637794 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:05.640790 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:05.643004 +05:00] INFO [updater_client]: Updater received command 5: QueryCurrentVersions
+[2023-10-08 20:15:05.643060 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:05.643583 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:05.646353 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:14.217343 +05:00] INFO [updater_client]: Updater received command 6: InstallModule { name: "discord_game_utils", options: None }
+[2023-10-08 20:15:14.217437 +05:00] INFO [updater_client::install]: Requesting installation of module discord_game_utils.
+[2023-10-08 20:15:14.217485 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-08 20:15:14.218021 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-08 20:15:14.221032 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_game_utils)", strong count: 1)
+[2023-10-08 20:15:14.221185 +05:00] INFO [updater_client::install]: Install of module discord_game_utils finished successfully.
+[2023-10-08 20:15:14.221531 +05:00] INFO [updater_client]: Updater received command 7: QueryCurrentVersions
+[2023-10-08 20:15:14.221575 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.222130 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.224908 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:14.225291 +05:00] INFO [updater_client]: Updater received command 8: InstallModule { name: "discord_krisp", options: None }
+[2023-10-08 20:15:14.225343 +05:00] INFO [updater_client::install]: Requesting installation of module discord_krisp.
+[2023-10-08 20:15:14.225382 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-08 20:15:14.225873 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-08 20:15:14.228516 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_krisp)", strong count: 1)
+[2023-10-08 20:15:14.228752 +05:00] INFO [updater_client::install]: Install of module discord_krisp finished successfully.
+[2023-10-08 20:15:14.229067 +05:00] INFO [updater_client]: Updater received command 9: QueryCurrentVersions
+[2023-10-08 20:15:14.229123 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.229719 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.232384 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:14.662077 +05:00] INFO [updater_client]: Updater received command 10: InstallModule { name: "discord_cloudsync", options: None }
+[2023-10-08 20:15:14.662168 +05:00] INFO [updater_client::install]: Requesting installation of module discord_cloudsync.
+[2023-10-08 20:15:14.662215 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-08 20:15:14.662872 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-08 20:15:14.667167 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_cloudsync)", strong count: 1)
+[2023-10-08 20:15:14.667538 +05:00] INFO [updater_client::install]: Install of module discord_cloudsync finished successfully.
+[2023-10-08 20:15:14.668131 +05:00] INFO [updater_client]: Updater received command 11: QueryCurrentVersions
+[2023-10-08 20:15:14.668207 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.669011 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.673282 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:14.918499 +05:00] INFO [updater_client]: Updater received command 12: InstallModule { name: "discord_overlay2", options: None }
+[2023-10-08 20:15:14.918581 +05:00] INFO [updater_client::install]: Requesting installation of module discord_overlay2.
+[2023-10-08 20:15:14.918747 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-08 20:15:14.919499 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-08 20:15:14.924618 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_overlay2)", strong count: 1)
+[2023-10-08 20:15:14.924972 +05:00] INFO [updater_client::install]: Install of module discord_overlay2 finished successfully.
+[2023-10-08 20:15:14.925398 +05:00] INFO [updater_client]: Updater received command 13: QueryCurrentVersions
+[2023-10-08 20:15:14.925465 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.926307 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:14.931453 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:18.539577 +05:00] INFO [updater_client]: Updater received command 14: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-08 20:15:18.539664 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-08 20:15:18.539698 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 20:15:18.540228 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 20:15:18.540297 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-08 20:15:18.816627 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-08 20:15:18.823317 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-08 20:15:18.823351 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-08 20:15:18.823670 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-08 20:15:19.331248 +05:00] INFO [updater_client]: Updater received command 15: InstallModule { name: "discord_rpc", options: None }
+[2023-10-08 20:15:19.331318 +05:00] INFO [updater_client::install]: Requesting installation of module discord_rpc.
+[2023-10-08 20:15:19.331349 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-08 20:15:19.331966 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-08 20:15:19.336004 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_rpc)", strong count: 1)
+[2023-10-08 20:15:19.336212 +05:00] INFO [updater_client::install]: Install of module discord_rpc finished successfully.
+[2023-10-08 20:15:19.336490 +05:00] INFO [updater_client]: Updater received command 16: QueryCurrentVersions
+[2023-10-08 20:15:19.336543 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:19.337006 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:19.339696 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:19.441362 +05:00] INFO [updater_client]: Updater received command 17: InstallModule { name: "discord_media", options: None }
+[2023-10-08 20:15:19.441443 +05:00] INFO [updater_client::install]: Requesting installation of module discord_media.
+[2023-10-08 20:15:19.441580 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-08 20:15:19.442281 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-08 20:15:19.446088 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_media)", strong count: 1)
+[2023-10-08 20:15:19.446329 +05:00] INFO [updater_client::install]: Install of module discord_media finished successfully.
+[2023-10-08 20:15:19.446678 +05:00] INFO [updater_client]: Updater received command 18: QueryCurrentVersions
+[2023-10-08 20:15:19.446733 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:19.447296 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:19.450132 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:20.604328 +05:00] INFO [updater_client]: Updater received command 19: InstallModule { name: "discord_dispatch", options: None }
+[2023-10-08 20:15:20.604426 +05:00] INFO [updater_client::install]: Requesting installation of module discord_dispatch.
+[2023-10-08 20:15:20.604462 +05:00] INFO [updater_client]: Updater received command 20: InstallModule { name: "discord_modules", options: None }
+[2023-10-08 20:15:20.604467 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-08 20:15:20.604516 +05:00] INFO [updater_client::install]: Requesting installation of module discord_modules.
+[2023-10-08 20:15:20.604552 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-08 20:15:20.605309 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-08 20:15:20.608201 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_modules)", strong count: 1)
+[2023-10-08 20:15:20.608404 +05:00] INFO [updater_client::install]: Install of module discord_modules finished successfully.
+[2023-10-08 20:15:20.608670 +05:00] INFO [updater_client]: Updater received command 21: QueryCurrentVersions
+[2023-10-08 20:15:20.608718 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:20.609210 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:20.612006 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 20:15:20.627489 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-08 20:15:20.630069 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_dispatch)", strong count: 1)
+[2023-10-08 20:15:20.630262 +05:00] INFO [updater_client::install]: Install of module discord_dispatch finished successfully.
+[2023-10-08 20:15:20.630519 +05:00] INFO [updater_client]: Updater received command 22: QueryCurrentVersions
+[2023-10-08 20:15:20.630567 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:20.630982 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-08 20:15:20.633520 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-08 21:15:18.594812 +05:00] INFO [updater_client]: Updater received command 23: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-08 21:15:18.600212 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-08 21:15:18.600861 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 21:15:18.613281 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 21:15:18.613770 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-08 21:15:19.197722 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-08 21:15:19.207479 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-08 21:15:19.207528 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-08 21:15:19.207996 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-08 22:15:18.546481 +05:00] INFO [updater_client]: Updater received command 24: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-08 22:15:18.546827 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-08 22:15:18.546917 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 22:15:18.547988 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-08 22:15:18.549427 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-08 22:15:18.949390 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-08 22:15:18.960941 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-08 22:15:18.960984 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-08 22:15:18.961328 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-09 20:05:52.289767 +05:00] INFO [updater_client]: Starting updater main thread. Application root: "C:\\Users\\MIHAIL\\AppData\\Local\\Discord"
+[2023-10-09 20:05:53.567016 +05:00] INFO [updater_client]: Updater received command 0: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-09 20:05:53.569688 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-09 20:05:53.569762 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-09 20:05:53.583507 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-09 20:05:53.584493 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-09 20:05:54.424513 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-09 20:05:54.430918 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-09 20:05:54.430953 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-09 20:05:54.431323 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-09 20:05:54.433408 +05:00] INFO [updater_client]: Updater received command 1: QueryCurrentVersions
+[2023-10-09 20:05:54.433467 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:54.433993 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:54.436643 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:05:54.437396 +05:00] INFO [updater_client]: Updater received command 2: SetManifests(Running, Some(Manifest { host_updates: HostUpdates { full: HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), package_sha256: "75e680f18e087368f4ba0b09066a8aa669b84edccb277dcf8a655fc104c1770f", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/full.distro" }, deltas: [HostUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), package_sha256: "558a10c7273d70767d41ee4df1262f70a6e573738ef4d7febfc65a3247a90939", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/from/1.0.9018" }], modules: {"discord_rpc": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "166628444f952916bb9cecfea3b8024b2b8b09d34c216ec2f56202eacef57fa0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "87d948df2a051e98e24442f5fdd2935a36414c508f1b19362de58492325b16ac", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_rpc/1/from/1.0.9018/1" }] }, "discord_dispatch": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "73eeae6137efdc211ac455863799e3ef575b2f0d95bfea00a2ffeb6f360aeb0d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "45b0e19e6e185c714f0b817a8b38debc106c665b945d64bb26d0afd3878cb93b", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_dispatch/1/from/1.0.9018/1" }] }, "discord_desktop_core": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "7bbcf9521928f0e5da5911dd024adf7e924fe8427b12f8cf2d0bd7039199ad14", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "8efa4649ea3cf72e3f04faa9eee98620c82d2a3613075a988adf103902da904d", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_desktop_core/1/from/1.0.9018/1" }] }, "discord_sekrit": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "96ac8b2d1faaea56739609cbf1b52e97a5970fc2c29434bd1f34b61ffd9e0942", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "132f0743313cb561ba8f81316f6eda3590f5d026586885ed1adb58371d555bbb", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_sekrit/1/from/1.0.9018/1" }] }, "discord_voice": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f4f1d2daae49c2edd8c84e1f917c9dfac7606e7acdf6dc3158ccb0176e1d9b0a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 4, package_sha256: "fc1a0c83bb06741ccb465e9e45d4ea36de690f32daf9e97eed7a003339b34377", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_voice/1/from/1.0.9018/4" }] }, "discord_overlay2": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "44d8d590225b16acce592191f27e50b53ee90a739c2d23b36af9f26914f9f983", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3aad5ba46047b59d58aeec91800ac5434766ff790a39d6028cbcb8dfa3b80f34", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_overlay2/1/from/1.0.9018/1" }] }, "discord_modules": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "61df0de1c3988325e3255bb971c42c81c5239874a30806b8e748a889a53bf37e", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "3d25ba8319df34866ac2683ae9ff6d33241a04b948f5057e137858920a2b3dc4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_modules/1/from/1.0.9018/1" }] }, "discord_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "0a6803ea47295819ac4d775da10731b4c6cd27bc6df83d50d3eff1f6e674ae80", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "f43180ac9c4650b2f82592b9ef63d2d3a943dc18887175cd1516a78be93dc43a", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_utils/1/from/1.0.9018/1" }] }, "discord_game_utils": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "4566e9b6e8161fae5a4841bf0548b5bfaa80eb8e32be0b7b27f326b3a6a65c38", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "2c7b0dbdee3f12aa81d957d0f3a394da861e042cbf39993574f6b4f4bfa204f2", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_game_utils/1/from/1.0.9018/1" }] }, "discord_hook": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c732fcf719a6c83591b7fa1118fdc0e2c9eaaf67d5e044f9dac30cf5abd70709", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "40f8cb2fca51d2eadbbe5b88f9c48d610009eb4fba731d824d8be3d46beea504", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_hook/1/from/1.0.9018/1" }] }, "discord_krisp": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "87aa66268681941523bc40810ddaa44fb5fca8dcd2dec1c51ecdcaff330e5078", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "58f8a1cdd5ee1ed7bb5b860bf564c944e16944fcb530edefa33fe4533af6c030", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_krisp/1/from/1.0.9018/1" }] }, "discord_vigilante": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "464331f3c7630fa151a6e04b3f91291454257ece6442f430da82405723216754", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "38ac365b3a2399247ca1d492759e018f2984eb58a06e93426540ec2d6a0f6e0c", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_vigilante/1/from/1.0.9018/1" }] }, "discord_media": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "1a8d1c27048a80c0294db922415f6f8e8c55b0041ad933d696450bc8dcc2e714", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "85f557993c5601d4054a7735b11310ca94402a11255f8b97fb8926c194147ae3", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_media/1/from/1.0.9018/1" }] }, "discord_spellcheck": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "56f8a87db6d02143df0268fa3dc67e54a2dfb58c507ede8dc496a13ecb283081", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "e10e6cd7467a74352e0d04bad756bd43ca67a3907183ae9865a02f368f11eac4", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_spellcheck/1/from/1.0.9018/1" }] }, "discord_cloudsync": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "f51abae3c38d7178af0f7afc191dc2c644480fda37b6215fdacd9b37a1d94409", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "789c2ea49c5e58e7474aefcc3b40f25ab37293671e23e8f9973c3e79a80745da", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_cloudsync/1/from/1.0.9018/1" }] }, "discord_erlpack": ModuleUpdates { full: ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9019), module_version: 1, package_sha256: "c6da3096fde4cf38cedf0ade63d0bde2aa1a83867a1926c5c73deac2f4fcbec0", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/full.distro" }, deltas: [ModuleUpdatePackage { host_version: HostVersionTriple(1, 0, 9018), module_version: 1, package_sha256: "854c22e0346c6dcd63c339110b1caeb0e8bcdbf7f0ed728cd360c9521cc800ab", url: "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9019/discord_erlpack/1/from/1.0.9018/1" }] }}, required_modules: ["discord_desktop_core", "discord_erlpack", "discord_spellcheck", "discord_utils", "discord_voice"] }, metadata_version: Some(38122) }))
+[2023-10-09 20:05:54.437677 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: set_manifests).
+[2023-10-09 20:05:54.438090 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: set_manifests).
+[2023-10-09 20:05:54.438151 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "set_manifests", strong count: 1)
+[2023-10-09 20:05:54.439100 +05:00] INFO [updater_client]: Updater received command 3: CollectGarbage
+[2023-10-09 20:05:54.439150 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: collect_garbage).
+[2023-10-09 20:05:54.439504 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: collect_garbage).
+[2023-10-09 20:05:54.442048 +05:00] INFO [updater_client]: Summary of in-use assets:
+[2023-10-09 20:05:54.442082 +05:00] INFO [updater_client]: Used host: HostVersionTriple(1, 0, 9019)
+[2023-10-09 20:05:54.442097 +05:00] INFO [updater_client]:   Used module: "discord_voice"
+[2023-10-09 20:05:54.442111 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442123 +05:00] INFO [updater_client]:   Used module: "discord_desktop_core"
+[2023-10-09 20:05:54.442135 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442147 +05:00] INFO [updater_client]:   Used module: "discord_rpc"
+[2023-10-09 20:05:54.442160 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442171 +05:00] INFO [updater_client]:   Used module: "discord_utils"
+[2023-10-09 20:05:54.442184 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442264 +05:00] INFO [updater_client]:   Used module: "discord_hook"
+[2023-10-09 20:05:54.442285 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442299 +05:00] INFO [updater_client]:   Used module: "discord_dispatch"
+[2023-10-09 20:05:54.442311 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442323 +05:00] INFO [updater_client]:   Used module: "discord_modules"
+[2023-10-09 20:05:54.442335 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442347 +05:00] INFO [updater_client]:   Used module: "discord_krisp"
+[2023-10-09 20:05:54.442359 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442371 +05:00] INFO [updater_client]:   Used module: "discord_spellcheck"
+[2023-10-09 20:05:54.442383 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442395 +05:00] INFO [updater_client]:   Used module: "discord_erlpack"
+[2023-10-09 20:05:54.442407 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442419 +05:00] INFO [updater_client]:   Used module: "discord_cloudsync"
+[2023-10-09 20:05:54.442431 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442443 +05:00] INFO [updater_client]:   Used module: "discord_overlay2"
+[2023-10-09 20:05:54.442455 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442467 +05:00] INFO [updater_client]:   Used module: "discord_media"
+[2023-10-09 20:05:54.442479 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442491 +05:00] INFO [updater_client]:   Used module: "discord_vigilante"
+[2023-10-09 20:05:54.442503 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442515 +05:00] INFO [updater_client]:   Used module: "discord_game_utils"
+[2023-10-09 20:05:54.442527 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.442539 +05:00] INFO [updater_client]:   Used module: "discord_sekrit"
+[2023-10-09 20:05:54.442551 +05:00] INFO [updater_client]:     - 1
+[2023-10-09 20:05:54.461678 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "collect_garbage", strong count: 1)
+[2023-10-09 20:05:55.272500 +05:00] INFO [updater_client]: Updater received command 4: QueryCurrentVersions
+[2023-10-09 20:05:55.272568 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:55.273100 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:55.275793 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:05:55.279070 +05:00] INFO [updater_client]: Updater received command 5: QueryCurrentVersions
+[2023-10-09 20:05:55.279138 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:55.279673 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:05:55.282646 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:02.767118 +05:00] INFO [updater_client]: Updater received command 6: InstallModule { name: "discord_game_utils", options: None }
+[2023-10-09 20:06:02.767198 +05:00] INFO [updater_client::install]: Requesting installation of module discord_game_utils.
+[2023-10-09 20:06:02.767235 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-09 20:06:02.767730 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_game_utils)).
+[2023-10-09 20:06:02.770449 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_game_utils)", strong count: 1)
+[2023-10-09 20:06:02.770443 +05:00] INFO [updater_client]: Updater received command 7: InstallModule { name: "discord_krisp", options: None }
+[2023-10-09 20:06:02.770551 +05:00] INFO [updater_client::install]: Requesting installation of module discord_krisp.
+[2023-10-09 20:06:02.770594 +05:00] INFO [updater_client::install]: Install of module discord_game_utils finished successfully.
+[2023-10-09 20:06:02.770596 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-09 20:06:02.770940 +05:00] INFO [updater_client]: Updater received command 8: QueryCurrentVersions
+[2023-10-09 20:06:02.771002 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.771167 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_krisp)).
+[2023-10-09 20:06:02.774067 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_krisp)", strong count: 1)
+[2023-10-09 20:06:02.774204 +05:00] INFO [updater_client::install]: Install of module discord_krisp finished successfully.
+[2023-10-09 20:06:02.774478 +05:00] INFO [updater_client]: Updater received command 9: QueryCurrentVersions
+[2023-10-09 20:06:02.774525 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.774963 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.777496 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:02.789565 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.792316 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:02.903772 +05:00] INFO [updater_client]: Updater received command 10: InstallModule { name: "discord_cloudsync", options: None }
+[2023-10-09 20:06:02.903873 +05:00] INFO [updater_client::install]: Requesting installation of module discord_cloudsync.
+[2023-10-09 20:06:02.903911 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-09 20:06:02.904658 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_cloudsync)).
+[2023-10-09 20:06:02.907866 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_cloudsync)", strong count: 1)
+[2023-10-09 20:06:02.908084 +05:00] INFO [updater_client::install]: Install of module discord_cloudsync finished successfully.
+[2023-10-09 20:06:02.908410 +05:00] INFO [updater_client]: Updater received command 11: QueryCurrentVersions
+[2023-10-09 20:06:02.908461 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.908949 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:02.911849 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:03.029663 +05:00] INFO [updater_client]: Updater received command 12: InstallModule { name: "discord_overlay2", options: None }
+[2023-10-09 20:06:03.029739 +05:00] INFO [updater_client::install]: Requesting installation of module discord_overlay2.
+[2023-10-09 20:06:03.029795 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-09 20:06:03.030609 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_overlay2)).
+[2023-10-09 20:06:03.034663 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_overlay2)", strong count: 1)
+[2023-10-09 20:06:03.034923 +05:00] INFO [updater_client::install]: Install of module discord_overlay2 finished successfully.
+[2023-10-09 20:06:03.035409 +05:00] INFO [updater_client]: Updater received command 13: QueryCurrentVersions
+[2023-10-09 20:06:03.035475 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:03.036123 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:03.040640 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:06.166316 +05:00] INFO [updater_client]: Updater received command 14: UpdateToLatest { options: Some(UpdateOptions { skip_host_delta: false, skip_module_delta: {} }) }
+[2023-10-09 20:06:06.166389 +05:00] INFO [updater_client::install]: Starting update to latest.
+[2023-10-09 20:06:06.166422 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: update_to_latest).
+[2023-10-09 20:06:06.166942 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: update_to_latest).
+[2023-10-09 20:06:06.167010 +05:00] INFO [updater_client::install]: Requesting manifest for HostIdentifier { name: APP, release_channel: STABLE, platform: WIN, arch: X86 }, from "https://updates.discord.com/"
+[2023-10-09 20:06:06.447092 +05:00] INFO [updater_client::install]: Already up to date. Nothing to do.
+[2023-10-09 20:06:06.452120 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 2)
+[2023-10-09 20:06:06.452153 +05:00] INFO [updater_client::install]: Update to latest complete.
+[2023-10-09 20:06:06.452509 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "update_to_latest", strong count: 1)
+[2023-10-09 20:06:06.790486 +05:00] INFO [updater_client]: Updater received command 15: InstallModule { name: "discord_rpc", options: None }
+[2023-10-09 20:06:06.790567 +05:00] INFO [updater_client::install]: Requesting installation of module discord_rpc.
+[2023-10-09 20:06:06.790604 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-09 20:06:06.791118 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_rpc)).
+[2023-10-09 20:06:06.793766 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_rpc)", strong count: 1)
+[2023-10-09 20:06:06.793916 +05:00] INFO [updater_client::install]: Install of module discord_rpc finished successfully.
+[2023-10-09 20:06:06.794251 +05:00] INFO [updater_client]: Updater received command 16: QueryCurrentVersions
+[2023-10-09 20:06:06.794312 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:06.794858 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:06.797470 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:06.845719 +05:00] INFO [updater_client]: Updater received command 17: InstallModule { name: "discord_media", options: None }
+[2023-10-09 20:06:06.845803 +05:00] INFO [updater_client::install]: Requesting installation of module discord_media.
+[2023-10-09 20:06:06.845846 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-09 20:06:06.846680 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_media)).
+[2023-10-09 20:06:06.851522 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_media)", strong count: 1)
+[2023-10-09 20:06:06.851705 +05:00] INFO [updater_client::install]: Install of module discord_media finished successfully.
+[2023-10-09 20:06:06.852055 +05:00] INFO [updater_client]: Updater received command 18: QueryCurrentVersions
+[2023-10-09 20:06:06.852121 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:06.852603 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:06.855152 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:08.023773 +05:00] INFO [updater_client]: Updater received command 19: InstallModule { name: "discord_dispatch", options: None }
+[2023-10-09 20:06:08.023864 +05:00] INFO [updater_client::install]: Requesting installation of module discord_dispatch.
+[2023-10-09 20:06:08.023902 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-09 20:06:08.023925 +05:00] INFO [updater_client]: Updater received command 20: InstallModule { name: "discord_modules", options: None }
+[2023-10-09 20:06:08.023982 +05:00] INFO [updater_client::install]: Requesting installation of module discord_modules.
+[2023-10-09 20:06:08.024017 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-09 20:06:08.024746 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_modules)).
+[2023-10-09 20:06:08.029115 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_modules)", strong count: 1)
+[2023-10-09 20:06:08.029330 +05:00] INFO [updater_client::install]: Install of module discord_modules finished successfully.
+[2023-10-09 20:06:08.029665 +05:00] INFO [updater_client]: Updater received command 21: QueryCurrentVersions
+[2023-10-09 20:06:08.029753 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:08.030497 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:08.035278 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:06:08.042721 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_dispatch)).
+[2023-10-09 20:06:08.046890 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_dispatch)", strong count: 1)
+[2023-10-09 20:06:08.047078 +05:00] INFO [updater_client::install]: Install of module discord_dispatch finished successfully.
+[2023-10-09 20:06:08.047372 +05:00] INFO [updater_client]: Updater received command 22: QueryCurrentVersions
+[2023-10-09 20:06:08.047432 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:08.048226 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:06:08.052435 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
+[2023-10-09 20:12:48.452440 +05:00] INFO [updater_client]: Updater received command 23: InstallModule { name: "discord_spellcheck", options: None }
+[2023-10-09 20:12:48.452569 +05:00] INFO [updater_client::install]: Requesting installation of module discord_spellcheck.
+[2023-10-09 20:12:48.452603 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: install_module(discord_spellcheck)).
+[2023-10-09 20:12:48.453141 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: install_module(discord_spellcheck)).
+[2023-10-09 20:12:48.456262 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "install_module(discord_spellcheck)", strong count: 1)
+[2023-10-09 20:12:48.456641 +05:00] INFO [updater_client::install]: Install of module discord_spellcheck finished successfully.
+[2023-10-09 20:12:48.456935 +05:00] INFO [updater_client]: Updater received command 24: QueryCurrentVersions
+[2023-10-09 20:12:48.456980 +05:00] INFO [updater_client::db]: Opening installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:12:48.457479 +05:00] INFO [updater_client::db]: Opened installer database (exclusive: true, caller: query_current_version).
+[2023-10-09 20:12:48.460141 +05:00] INFO [updater_client::db]: Dropping database reference (exclusive: true, caller: "query_current_version", strong count: 1)
